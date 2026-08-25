@@ -6,6 +6,9 @@ public class Teste : MonoBehaviour
     void Start()
     {
         // ISSO É UM EXEMPLO DE CODIGO.
+
+        // ISSO É OUTRA LINHA DE CODIGO.
+        
     }
 
     // Update is called once per frame
