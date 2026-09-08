@@ -2,15 +2,19 @@ using UnityEngine;
 
 public class MovimentoLateral : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    public float speed = 5f;
+    public float horizontal;
+
     void Start()
     {
-        //FIZ UM PEDAÇO DO CODIGO
+        
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        horizontal = Input.GetAxisRaw("Horizontal");
+        transform.position += Vector3.right * horizontal * speed * Time.deltaTime;
     }
 }
